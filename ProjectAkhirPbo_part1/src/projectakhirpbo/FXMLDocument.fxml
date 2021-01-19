@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="1251.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectakhirpbo.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="211.0" prefWidth="1251.0" style="-fx-background-color: #607196;">
+         <children>
+            <Label layoutX="408.0" layoutY="14.0" prefHeight="35.0" prefWidth="500.0" text="PROGRAM INPUT DATA PAKET JNE">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#e80909" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <TextField fx:id="txt_noresi" layoutX="201.0" layoutY="65.0" prefHeight="31.0" prefWidth="390.0" />
+            <TextField fx:id="txt_nama" layoutX="201.0" layoutY="106.0" prefHeight="31.0" prefWidth="390.0" />
+            <TextField fx:id="txt_nohp" layoutX="201.0" layoutY="151.0" prefHeight="31.0" prefWidth="262.0" />
+            <TextField fx:id="txt_alamat" layoutX="733.0" layoutY="72.0" prefHeight="31.0" prefWidth="326.0" />
+            <TextField fx:id="txt_jenis" layoutX="733.0" layoutY="108.0" prefHeight="31.0" prefWidth="326.0" />
+            <Text fill="#ebeaea" layoutX="145.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No resi" />
+            <Text fill="#f8f6f6" layoutX="92.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Penerima" />
+            <Text fill="#f8f6f6" layoutX="97.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No telpon/WA" />
+            <Text fill="#f8f6f6" layoutX="612.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alamat Lengkap" />
+            <Text fill="#f8f6f6" layoutX="637.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Barang" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tabel_jne" layoutY="274.0" prefHeight="200.0" prefWidth="1251.0">
+        <columns>
+          <TableColumn fx:id="no_resi" prefWidth="160.0" text="NoResi" />
+          <TableColumn fx:id="nama_penerima" prefWidth="194.0" text="NamaPenerima" />
+            <TableColumn fx:id="no_hp" prefWidth="224.0" text="NoHp" />
+            <TableColumn fx:id="alamat" prefWidth="455.0" text="AlamatLengkap" />
+            <TableColumn fx:id="jenis_barang" prefWidth="217.0" text="JenisBarang" />
+        </columns>
+      </TableView>
+      <Button fx:id="hapus" layoutX="666.0" layoutY="215.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="HAPUS" />
+      <Button fx:id="edit" layoutX="555.0" layoutY="215.0" mnemonicParsing="false" onAction="#edit" prefHeight="50.0" prefWidth="100.0" text="EDIT" />
+      <Button fx:id="tambah" layoutX="444.0" layoutY="215.0" mnemonicParsing="false" onAction="#tambah" prefHeight="50.0" prefWidth="100.0" text="TAMBAH" />
+   </children>
+</AnchorPane>
